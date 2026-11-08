@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://mahesawastu8.github.io/awesome-developer-stack/sitemap.xml
