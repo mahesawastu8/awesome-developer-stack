@@ -34,6 +34,6 @@ Most legacy tools drown you in vanity metrics. Typefully focuses on engagement r
 ## 3. Final Recommendation
 
 * If you only need to broadcast occasional links across 5 different platforms: **Buffer** is sufficient.
-* If your goal is to build an authoritative technical personal brand, share engineering insights, and grow an audience on X and LinkedIn: [**Typefully is the highest-signal tool in the industry**](https://affiliates.typefully.com/signup).
+* If your goal is to build an authoritative technical personal brand, share engineering insights, and grow an audience on X and LinkedIn: [**Typefully is the highest-signal tool in the industry**](https://typefully.com/?via=dimas).
 
-👉 [**Try Typefully Free Tier**](https://affiliates.typefully.com/signup)
+👉 [**Try Typefully Free Tier**](https://typefully.com/?via=dimas)

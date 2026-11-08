@@ -57,7 +57,6 @@
 ---
 
 ## 🎬 Generative AI Video & Shorts
-
 | Engine | Generation Paradigm | Assets | Best For | Link |
 | :--- | :--- | :--- | :--- | :--- |
 | **InVideo AI** | Autonomous Prompt-to-Video | 16M+ Getty & iStock | High-retention Shorts, Reels, Faceless Channels | [**Test InVideo AI Free**](https://invideo.io/affiliates) |
@@ -71,7 +70,7 @@
 
 | Tool | Platforms | Free Tier | Key Advantage | Link |
 | :--- | :--- | :--- | :--- | :--- |
-| **Typefully** | X (Twitter) & LinkedIn | ✅ Free plan | Distraction-free writing, Vesper AI rewrites, thread auto-splitting | [**Try Typefully Free**](https://affiliates.typefully.com/signup) |
+| **Typefully** | X (Twitter) & LinkedIn | ✅ Free plan | Distraction-free writing, Vesper AI rewrites, thread auto-splitting | [**Try Typefully Free**](https://typefully.com/?via=dimas) |
 | **Buffer** | Multi-channel | ⚠️ 3 channels free | Basic post queuing, lacks deep thread formatting | [Website](https://buffer.com) |
 
 📖 Read: [**Typefully vs. Buffer for Technical Founders**](docs/typefully-vs-buffer-2026.md)
