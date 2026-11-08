@@ -1,0 +1,54 @@
+name: APEX Autonomous Cloud Syndicate
+
+on:
+  schedule:
+    # Runs every 6 hours automatically on GitHub Cloud
+    - cron: '0 */6 * * *'
+  workflow_dispatch: # Allows manual trigger from GitHub UI
+
+permissions:
+  contents: write
+
+jobs:
+  syndicate:
+    name: Autonomous Content & SEO Syndicate
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - name: 📥 Checkout Repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: ⚡ Setup Bun Runtime
+        uses: oven-sh/setup-bun@v2
+        with:
+          bun-version: latest
+
+      - name: 📦 Install Dependencies
+        run: |
+          bun install --no-save
+
+      - name: 🚀 Run Autonomous Dev.to & Search Syndicate
+        env:
+          DEVTO_API_KEY: ${{ secrets.DEVTO_API_KEY }}
+        run: |
+          if [ -n "$DEVTO_API_KEY" ]; then
+            echo "Publishing high-authority benchmark articles..."
+            bun run ./scripts/cloud_publisher.ts "$DEVTO_API_KEY"
+          else
+            echo "DEVTO_API_KEY not configured in GitHub Secrets. Skipping external push."
+          fi
+
+      - name: 💾 Commit Updated Telemetry & Queue
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+          else
+            git commit -m "chore(autonomous): update search index & syndicated telemetry [skip ci]"
+            git push
+          fi
